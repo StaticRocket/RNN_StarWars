@@ -20,11 +20,12 @@ import my_txtutils as txt
 # HYPERPARAMETERS: Tweak settings here #
 ########################################
 ALPHA_SIZE = txt.ALPHASIZE # 98 Upper, lower, numbers, symbols, etc
-SEQ_LEN = 32 # Number of characters per sequence
+SEQ_LEN = 128 # Number of characters per sequence
 
-BATCH_SIZE = 250 # Sequences per batch
-NUM_OF_GRUS = 512 # Number of GRU cells per layer
-NUM_LAYERS = 3 # How many layers deep we are going
+NUM_EPOCHS = 50  # Number of epochs
+BATCH_SIZE = 250  # Sequences per batch
+NUM_OF_GRUS = 512  # Number of GRU cells per layer
+NUM_LAYERS = 3  # How many layers deep we are going
 
 SET_LR = 0.001  # Small fixed learning rate
 SET_PKEEP = 0.75    # Dropping 20% of neurons
@@ -96,7 +97,7 @@ sess.run(init)
 step = 0
 
 # MAIN TRAINING LOOP
-for x, y_, epoch in txt.rnn_minibatch_sequencer(traintext, BATCH_SIZE, SEQ_LEN, nb_epochs=10):
+for x, y_, epoch in txt.rnn_minibatch_sequencer(traintext, BATCH_SIZE, SEQ_LEN, nb_epochs=NUM_EPOCHS):
 
     # Feed in and train one batch
     feed_dict = {X: x, Y_: y_, Hin: istate, lr: SET_LR, pkeep: SET_PKEEP, batchsize: BATCH_SIZE}
