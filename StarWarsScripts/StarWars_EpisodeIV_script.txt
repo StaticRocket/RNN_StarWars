@@ -2,14 +2,14 @@
                           STAR WARS
                     !! PUBLIC  VERSION !!
   
-          “A long time ago, in a galaxy far, far 
-          away...”
+          √íA long time ago, in a galaxy far, far 
+          away...√ì
 
 A vast sea of stars serves as the backdrop for the main
 title.  War drums echo through the heavens as a rollup 
 slowly crawls into infinity.
 
-          “It is a period of civil war.  Rebel 
+          √íIt is a period of civil war.  Rebel 
           spaceships, striking from a hidden 
           base, have won their first victory 
           against the evil Galactic Empire.
@@ -24,7 +24,7 @@ slowly crawls into infinity.
           Princess Leia races home aboard her 
           starship, custodian of the stolen plans 
           that can save her people and restore 
-          freedom to the galaxy...”
+          freedom to the galaxy...√ì
 
 The awesome yellow planet of Tatooine emerges from a total
 eclipse, her two moons glowing against the darkness.  A 
@@ -434,7 +434,7 @@ Leia is marched away down the hallway and into the smoldering hole blasted in th
           to find their secret base!
 
                     COMMANDER
-          She'll die before she’ll tell 
+          She'll die before she√ïll tell 
           you anything.
 
                     VADER
@@ -649,7 +649,7 @@ Biggs shakes his head angrily and then continues.
           who might help us make contact.
 
                     LUKE
-          You’re crazy!  You could wander 
+          You√ïre crazy!  You could wander 
           around forever trying to find them.
 
                     BIGGS
@@ -1186,7 +1186,7 @@ The princess immediately disappears.
 Artoo beeps an innocent reply as Threepio sits up in embarrassment.
 
                     THREEPIO
-          What message?  The one you’ve just
+          What message?  The one you√ïve just
           been playing.  The one you're 
           carrying inside your rusty innards! 
 
@@ -2137,7 +2137,7 @@ Luke becomes very nervous as he fumbles to find his ID while Ben speaks to the T
           identification.
 
                     BEN
-          These are not the droids you’re 
+          These are not the droids you√ïre 
           looking for.
 
                     TROOPER
@@ -2544,7 +2544,7 @@ Ben and Luke are standing in a sleazy used speeder lot, talking with a tall, gro
                     LUKE
           He says it's the best he can do.  
           Since the XP-38 came out, they 
-          just aren’t in demand.
+          just aren√ït in demand.
 
                     BEN
           It will be enough.
@@ -2854,7 +2854,7 @@ Vader and two stormtroopers enter with Princess Leia.  Her hands are bound.
           the order to terminate your life!
 
                     LEIA
-          I’m surprised you had the courage 
+          I√ïm surprised you had the courage 
           to take the responsibility yourself!
 
                     TARKIN
@@ -5795,7 +5795,7 @@ Walls buckle and cave in.  Troops and equipment are blown in all directions.  St
 
 INT. DEATH STAR
 
-Smoke belches from the giant laser guns as they wind up their turbine generators to create sufficient power.  The crew rushes about preparing for another blast.  Even the troopers’ head gear is not adequate to protect them from the overwhelming noise of the monstrous weapon.  One trooper bangs his helmet with his hand in an attempt to stop the ringing.
+Smoke belches from the giant laser guns as they wind up their turbine generators to create sufficient power.  The crew rushes about preparing for another blast.  Even the troopers√ï head gear is not adequate to protect them from the overwhelming noise of the monstrous weapon.  One trooper bangs his helmet with his hand in an attempt to stop the ringing.
 
 
 INT. READ LEADER'S X-WING FIGHTER - COCKPIT - TRAVELING
@@ -6695,7 +6695,7 @@ INT. RED LEADER'S COCKPIT
 
 EXT. DEATH STAR SURFACE
 
-Red Leader’s X-wing pulls up just before a huge explosion billows out of the trench.
+Red Leader√ïs X-wing pulls up just before a huge explosion billows out of the trench.
 
 
 INT. DEATH STAR
