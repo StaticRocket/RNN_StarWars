@@ -20,11 +20,11 @@ import my_txtutils as txt
 # HYPERPARAMETERS: Tweak settings here #
 ########################################
 ALPHA_SIZE = txt.ALPHASIZE # 98 Upper, lower, numbers, symbols, etc
-SEQ_LEN = 128 # Number of characters per sequence
+SEQ_LEN = 64 # Number of characters per sequence
 
 NUM_EPOCHS = 50  # Number of epochs
 BATCH_SIZE = 250  # Sequences per batch
-NUM_OF_GRUS = 512  # Number of GRU cells per layer
+NUM_OF_GRUS = 1024  # Number of GRU cells per layer
 NUM_LAYERS = 3  # How many layers deep we are going
 
 SET_LR = 0.001  # Small fixed learning rate
@@ -95,6 +95,8 @@ init = tf.global_variables_initializer()
 sess = tf.Session()
 sess.run(init)
 step = 0
+
+graph_writer = tf.summary.FileWriter(("log/" + timestamp + "-graph"), sess.graph)
 
 # MAIN TRAINING LOOP
 for x, y_, epoch in txt.rnn_minibatch_sequencer(traintext, BATCH_SIZE, SEQ_LEN, nb_epochs=NUM_EPOCHS):
