@@ -12,9 +12,13 @@ import numpy as np
 import math
 import os
 import time
+import datetime
 
 # Gorner Text Utilities Import
 import my_txtutils as txt
+
+# Start Time
+start_time = str(datetime.datetime.now().time())
 
 ########################################
 # HYPERPARAMETERS: Tweak settings here #
@@ -149,3 +153,7 @@ for x, y_, epoch in txt.rnn_minibatch_sequencer(traintext, BATCH_SIZE, SEQ_LEN, 
     istate = ostate
     step += BATCH_SIZE * SEQ_LEN
 
+# TIME ELAPSED
+print("\n")
+print("Start: " + start_time)
+print("End: " + str(datetime.datetime.now().time()))
