@@ -2,10 +2,13 @@
 # Takes in the scripts for Star Wars Episodes
 # 1-7, and trains on them.
 
+# Speech Imports
+import pyttsx3
+
 # TensorFlow Imports
 import tensorflow as tf
 from tensorflow.contrib import layers
-from tensorflow.contrib import rnn 
+from tensorflow.contrib import rnn
 
 # Standard Python Imports
 import numpy as np
@@ -15,6 +18,9 @@ import time
 
 # Gorner Text Utilities Import
 import my_txtutils as txt
+
+# Speech Engine
+engine = pyttsx3.init()
 
 ########################################
 # HYPERPARAMETERS: Tweak settings here #
@@ -130,11 +136,15 @@ for x, y_, epoch in txt.rnn_minibatch_sequencer(traintext, BATCH_SIZE, SEQ_LEN, 
         txt.print_text_generation_header()
         ry = np.array([[txt.convert_from_alphabet(ord("K"))]])
         rh = np.zeros([1, NUM_OF_GRUS * NUM_LAYERS])
+        temp = ""
         for k in range(1000):
             ryo, rh = sess.run([Yo, H], feed_dict={X: ry, pkeep: 1.0, Hin: rh, batchsize: 1})
             rc = txt.sample_from_probabilities(ryo, topn=10 if epoch <= 1 else 2)
-            print(chr(txt.convert_to_alphabet(rc)), end="")
+            temp += chr(txt.convert_to_alphabet(rc))
             ry = np.array([[rc]])
+        print(temp)
+        engine.say(temp)
+        engine.runAndWait()
         txt.print_text_generation_footer()
 
     # Save checkpoints, will also be helpful when running final network
@@ -148,4 +158,3 @@ for x, y_, epoch in txt.rnn_minibatch_sequencer(traintext, BATCH_SIZE, SEQ_LEN, 
     # Increment steps and set input to output to prep for next loop
     istate = ostate
     step += BATCH_SIZE * SEQ_LEN
-
